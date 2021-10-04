@@ -4,6 +4,7 @@
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="https://genfavicon.com/tmp/icon_8a668f8c848766427623e1f4dfe5b82a.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../CSS/contactstyle.css" type="text/css" media="all">
 	    <title>Contáctanos</title>
     </head>
     <body>
@@ -11,24 +12,15 @@
 
         </header>
         <main>
-            <section>
-                <h2>Contáctanos</h2>
-                <form action="" method="POST">
-                    <label for="POST-name">Nombre Completo</label>
-                    <input id="POST-name" type="text" name="name">
-                    <br>
-                    <label for="Email">Correo Electronico</label>
-                    <input id="Email" type="email" name="Correo Electronico">
-                    <br>
-                    <label for="Comentario">Comentario</label>
-                    <input id="Comentario" type="text" name="Comentario">
-                    <br>
-                    <input type="submit" value="Save">
-                    <input type="button" value="Cancelar">
-                    <br>              
-
+            <div class="form-style">
+                <h1>Contáctanos</h1>
+                <form>
+                <input type="text" name="field1" placeholder="Nombre" />
+                <input type="email" name="field2" placeholder="Correo Eléctronico" />
+                <textarea name="field3" placeholder="Comentario"></textarea>
+                <input type="submit" value="Enviar" />
                 </form>
-            </section>  
+                </div>
         </main>
     </body>
     <footer>
