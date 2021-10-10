@@ -23,7 +23,7 @@
 .form-style input[type="time"],
 .form-style input[type="url"],
 .form-style textarea,
-.form-style select 
+.form-style select
 {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
