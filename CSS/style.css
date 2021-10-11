@@ -20,13 +20,13 @@ body{
     color:#0c0c0c;
     letter-spacing:10px;
     margin:0px 0 0 200px;
-  }
-  #logo{
+}
+#logo{
    width:180px;
    height:160px;
    margin:-100px 0 0 0px;
    
-  }
+}
   
 .grid {
     display: grid;
@@ -53,6 +53,7 @@ header {
 
 nav {
     grid-area: nav;
+    font-family: sans-serif;
 }
 nav{
     width: 90%;
@@ -61,6 +62,26 @@ nav{
 }
 nav ul li{
     list-style: none;
+}
+
+nav > li{
+    float: left;
+}
+
+nav li a{
+    background-color: beige;
+    color:black;
+    text-decoration: none;
+    padding: 10% 12%;
+    display: block;
+}
+
+nav li a:hover{
+    background-color: gray;
+}
+
+nav li ul li{
+    position: relative;
 }
 section#middlepane {
     grid-area: middlepane;
@@ -82,14 +103,22 @@ img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 3px;
-    width: 7%;
+    width: 25%;
+}
+
+.galeria{
+    transition: tranform .2s;
+}
+
+.galeria:hover{
+    transform: scale(2.5);
 }
 
 video {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 3px;
-    width: 7%;
+    width: 25%;
 }
 
 h1{
