@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
 }
 
 body{
+    
     background-color: #EBE6E3;
     font-size: 62.5%;
     font-style: inherit;
@@ -13,21 +15,21 @@ body{
     height: 100%;
     margin: 0;
 }
-#title{
+.title{
+    font-family: 'Dancing Script', cursive;
     font-size:60px;
-    font-family:inherit;
     text-align: center;
     color:#0c0c0c;
     letter-spacing:10px;
     margin:0px 0 0 200px;
 }
-#logo{
+.logo{
    width:180px;
    height:160px;
    margin:-100px 0 0 0px;
    
 }
-  
+
 .grid {
     display: grid;
     grid-template-columns: 15% auto auto 20%;
@@ -83,8 +85,11 @@ nav li a:hover{
 nav li ul li{
     position: relative;
 }
-section#middlepane {
+
+#middlepane {
     grid-area: middlepane;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section#middlepane {
