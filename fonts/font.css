@@ -33,3 +33,7 @@
 .icon-whatsapp:before {
   content: "\ea93";
 }
+
+.icon-facebook::before{
+  content: "\ea90";
+}
