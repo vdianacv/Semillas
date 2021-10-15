@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import "bourbon";
 @font-face {
     font-family: 'icomoon';
     src:  url('/fonts/icomoon.eot?i226ha');
@@ -32,10 +36,11 @@
 }
 
 body{
-    
     background-color: #EBE6E3;
     font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
     font-style: inherit;
+    overflow-y: scroll;
     line-height: 1; 
     width: 100%;
     height: 100%;
@@ -83,46 +88,37 @@ nav {
     grid-area: nav;
     font-family: sans-serif;
 }
-nav{
-    width: 90%;
-    margin: 50%, auto;
-    z-index: 900%;
-}
-nav ul li{
-    list-style: none;
-}
 
-nav > li{
-    float: left;
-}
-
-nav li a{
-    background-color: beige;
-    color:black;
+a{
     text-decoration: none;
-    padding: 10% 12%;
-    display: block;
+        @include transition(all 0.6s ease)
+
+    &::hover{
+        @include transition(all 00.6s ease)
+    }
+
 }
 
-nav li a:hover{
-    background-color: gray;
+.sidebar{
+    position: absolute;
+    width: 17em;
+    height: 100%;
+    top: 0;
+    overflow:hidden
+    
 }
 
-nav li ul li{
-    position: relative;
-}
-
-#middlepane {
+.middlepane {
     grid-area: middlepane;
     display: flex;
     flex-wrap: wrap;
 }
 
-section#middlepane {
+.middlepane {
     grid-area: middlepane;
 }
 
-section#aside {
+.aside {
     grid-area: aside;
 }
 
@@ -135,14 +131,6 @@ img {
     border-radius: 4px;
     padding: 3px;
     width: 25%;
-}
-
-.galeria{
-    transition: tranform .2s;
-}
-
-.galeria:hover{
-    transform: scale(2.5);
 }
 
 video {
@@ -163,7 +151,7 @@ h2, h3, h4{
 }
 
 p {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 13px;
     /*font-size: 1.5rem;    */
     line-height: 1.333333334;
