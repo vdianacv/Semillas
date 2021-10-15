@@ -5,11 +5,11 @@
 @import "bourbon";
 @font-face {
     font-family: 'icomoon';
-    src:  url('/fonts/icomoon.eot?i226ha');
-    src:  url('/fonts/icomoon.eot?i226ha#iefix') format('embedded-opentype'),
-      url('/fonts/icomoon.ttf?i226ha') format('truetype'),
-      url('/fonts/icomoon.woff?i226ha') format('woff'),
-      url('/fonts/icomoon.svg?i226ha#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?i226ha');
+    src:  url('../fonts/icomoon.eot?i226ha#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?i226ha') format('truetype'),
+      url('../fonts/icomoon.woff?i226ha') format('woff'),
+      url('../fonts/icomoon.svg?i226ha#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak-as: never;
-    
+
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
