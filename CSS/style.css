@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import "bourbon";
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/fonts/icomoon.eot?i226ha');
+    src:  url('/fonts/icomoon.eot?i226ha#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?i226ha') format('truetype'),
+      url('/fonts/icomoon.woff?i226ha') format('woff'),
+      url('/fonts/icomoon.svg?i226ha#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*="icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.5%;
+}
+
+body{
+    background-color: #EBE6E3;
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+    font-style: inherit;
+    overflow-y: scroll;
+    line-height: 1; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.title{
+    font-family: 'Dancing Script', cursive;
+    font-size:60px;
+    text-align: center;
+    color:#0c0c0c;
+    letter-spacing:10px;
+    margin:0px 0 0 200px;
+}
+.logo{
+   width:180px;
+   height:160px;
+   margin:-100px 0 0 0px;
+   
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 15% auto auto 20%;
+    grid-auto-rows: auto 1fr 1fr 75%;
+    grid-template-areas: 
+        "header header header header header"
+        "nav middlepane middlepane middlepane aside"
+        "nav footer footer footer footer";
+    gap: 10%;
+    row-gap: 15%;
+
+    height: 5vh;
+    margin: 0;
+}
+
+.border {
+    border: 0;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+        @include transition(all 0.6s ease)
+
+    &::hover{
+        @include transition(all 00.6s ease)
+    }
+
+}
+
+.sidebar{
+    position: absolute;
+    width: 17em;
+    height: 100%;
+    top: 0;
+    overflow:hidden
+    
+}
+
+.middlepane {
+    grid-area: middlepane;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middlepane {
+    grid-area: middlepane;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+    width: 25%;
+}
+
+video {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+    width: 25%;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 50px, 0, 0, 100px;
+}
+
+h2, h3, h4{
+    font-family: sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    /*font-size: 1.5rem;    */
+    line-height: 1.333333334;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 65%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: black;
+    text-decoration: none;
+    padding: .8rem;
+    display: flex;
+    transition: all .5s;
+}
+
+.icon-mail {
+    background: #DB4437;
+}
+
+.icon-instagram {
+    background: #8134AF;
+}
+
+.icon-whatsapp {
+    background: #128C7E;
+}
+
+.icon-facebook {
+    background: #4267B2;
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba,(0, 0, 0, 0.42);
+}
+
+.icon-mail:before {
+    content: "\ea83";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+.icon-facebook:before{
+    content: "\ea90"
+}
+/*Estilos Mobile*/
+/*@media screen and (min-width: 768px){
+    body{
+        ;
+    }
+}
+
+#grilla { display: grid;}
+@media screen and (min-width: 768px) {
+    #grilla{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .border{
+        border: 4px solid black;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #grilla{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .border{
+        border: 4px solid black;
+        background-color: gray;
+    }
+}*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card, .h2{
+    color: grey;
+    font-size: 22px;
+    text-align: center;
+}
+  
+.price,  .size{
+    color: grey;
+    font-size: 22px;
+    text-align: center;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
