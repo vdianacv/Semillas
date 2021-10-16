@@ -41,11 +41,18 @@ body{
     font-size: 62.5%;
     font-family: 'Playfair Display', serif;
     overflow-y: scroll;
-    line-height: 1; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility;
     width: 100%;
     height: 100%;
     margin: 0;
 }
+
 .title{
     font-family: 'Dancing Script', cursive;
     font-size:60px;
@@ -89,6 +96,111 @@ nav {
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    transition:all 0.6s ease;
+    transition:all 0.6s ease;
+}
+
+.sidebar-nav ul li{
+    list-style: none;
+}
+
+.sidebar-nav  li{
+    float: left;
+}
+
+/*.sidebar{
+    position: absolute;
+    width: 33.3333%;
+    width: 17em;
+    height: 100%;
+    top: 0;
+    overflow:hidden;
+    background-color: #ddd;
+    transform: translateZ(0);
+    visibility: visible;
+    backface-visibility: hidden;
+}*/
+
+.sidebar-nav {
+    position: fixed;
+    background-color: #ddd;
+    height: 100%;
+    font-weight: 400; 
+    font-size: 1.2em;
+    overflow: auto;
+    padding-bottom: 6em;
+    z-index: 9;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul{
+    list-style:none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+  
+.sidebar-nav ul li{
+    margin-left: 0;
+    padding-left: 0;
+    display:inline-block;
+    width: 100%;
+}
+
+a{
+    color: rgba(32, 31, 31, 0.9);
+    font-size: 0.75em;
+    padding: 1.05em	1em;
+    position: relative;
+    display:block;
+} 
+
+a:hover{
+      background-color: rgba(202, 193, 193, 0.301);
+      transition:all 0.6s ease;
+}
+  
+i{
+    font-size: 1.8em;
+    padding-right: 0.5em;
+    width: 9em;
+    display: inline;
+    vertical-align:middle;
+}  
+
+.sidebar-nav ul > li > a:after {
+    content: '\f125';
+    font-family: ionicons;
+    font-size: 0.5em;
+    width: 10px;
+    color: #fff;
+    position: absolute;
+    right: 0.75em;
+    top: 45%;
+}
+  
+.nav-flyout {
+    position: absolute;
+    background-color: #ddd;
+    z-index: 9;
+    left: 2.5em;
+    top: 0;
+    height: 100vh;
+    transform: translate(100px, 10%);
+    transition: all 0.5s ease;
+}
+  
+.nav-flyout   a:hover{
+    background-color: rgba(255,255,255, 0.05)
+}
+  
+.nav-flyout ul > li a:hover{
+    transform: translate(100px, 10%);
+     transition:all 0.5s ease-out;
+}
 
 .middlepane {
     grid-area: middlepane;
