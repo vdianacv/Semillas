@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
-@import 'bourbon';
-
 
 @font-face {
     font-family: 'icomoon';
@@ -37,7 +35,6 @@
     margin: 0;
     padding: 0.5%;
 }
-
 body{
     background-color: #EBE6E3;
     font-size: 62.5%;
@@ -54,6 +51,7 @@ body{
     height: 100%;
     margin: 0;
 }
+
 .title{
     font-family: 'Dancing Script', cursive;
     font-size:60px;
@@ -68,6 +66,7 @@ body{
    margin:-100px 0 0 0px;
    
 }
+
 .grid {
     display: grid;
     grid-template-columns: 15% auto auto 20%;
@@ -218,6 +217,10 @@ i{
 
 footer {
     grid-area: footer;
+}
+
+footer{
+    display: block;
 }
 
 img {
@@ -464,3 +467,4 @@ a{
 	border: 1px solid #E8E7E3;
 	align-items: center;
 }
+
