@@ -69,9 +69,7 @@ body {
   -ms-grid-columns: 15% auto auto 20%;
       grid-template-columns: 15% auto auto 20%;
   grid-auto-rows: auto 1fr 1fr 75%;
-      grid-template-areas: "header header header header header"
- "nav middlepane middlepane middlepane aside"
- "nav footer footer footer footer";
+      grid-template-areas: "header header header header header" "nav middlepane middlepane middlepane aside" "nav footer footer footer footer";
   gap: 10%;
   row-gap: 15%;
   height: 5vh;
@@ -238,6 +236,10 @@ footer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: footer;
+}
+
+footer {
+  display: block;
 }
 
 img {
