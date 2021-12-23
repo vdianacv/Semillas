@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import "bourbon";
 
 @font-face {
     font-family: 'icomoon';
@@ -109,18 +110,17 @@ a{
     float: left;
 }
 
-/*.sidebar{
+.sidebar {
     position: absolute;
-    width: 33.3333%;
     width: 17em;
     height: 100%;
-    top: 0;
-    overflow:hidden;
-    background-color: #ddd;
+    top: auto;
+    overflow: hidden;
+    background-color: #EBE6E3;
     transform: translateZ(0);
     visibility: visible;
     backface-visibility: hidden;
-}*/
+  }
 
 .sidebar-nav {
     position: fixed;
@@ -150,6 +150,8 @@ ul{
 }
 
 a{
+    text-decoration: none;
+    @include transition(all 00.6s ease);
     color: rgba(32, 31, 31, 0.9);
     font-size: 0.75em;
     padding: 1.05em	1em;
@@ -159,7 +161,7 @@ a{
 
 a:hover{
       background-color: rgba(202, 193, 193, 0.301);
-      transition:all 0.6s ease;
+     @include transition (all 0.6s ease);
 }
   
 i{
