@@ -73,7 +73,7 @@ body{
     grid-template-columns: 15% auto auto 20%;
     grid-auto-rows: auto 1fr 1fr 75%;
     grid-template-areas: 
-        "header header header header header"
+        "nav header header header header"
         "nav middlepane middlepane middlepane aside"
         "nav footer footer footer footer";
     gap: 10%;
@@ -109,19 +109,6 @@ a{
 .sidebar-nav  li{
     float: left;
 }
-
-/*.sidebar{
-    position: absolute;
-    width: 33.3333%;
-    width: 17em;
-    height: 100%;
-    top: 0;
-    overflow:hidden;
-    background-color: #ddd;
-    transform: translateZ(0);
-    visibility: visible;
-    backface-visibility: hidden;
-}*/
 
 .sidebar-nav {
     position: fixed;
