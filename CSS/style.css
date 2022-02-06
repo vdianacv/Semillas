@@ -10,6 +10,7 @@
       url('../fonts/icomoon.ttf?i226ha') format('truetype'),
       url('../fonts/icomoon.woff?i226ha') format('woff'),
       url('/fonts/icomoon.svg?i226ha#icomoon') format('svg');
+      
     font-weight: normal;
     font-style: normal;
 }
@@ -303,9 +304,32 @@ p {
     content: "\ea90"
 }
 /*Estilos Mobile*/
-/*@media screen and (min-width: 768px){
-    body{
-        ;
+@media (min-width: 768px){
+    .menu-toggle{
+        display: none;
+    }
+    .sidebar-nav{
+        height: auto;
+        position:relative;
+        background: transparent;
+        float: right;
+        margin-right: 10px;
+        clip-path: initial;
+    }
+    
+    .sidebar-nav li{
+        display: inline-block;
+        border: none;
+    }
+
+    .sidebar-nav a{
+        padding: 0;
+        margin-left: 3em;
+    }
+
+    .sidebar-nav a:hover,
+    .sidebar-nav a:focus{
+        background: transparent;
     }
 }
 
@@ -315,8 +339,8 @@ p {
         grid-template-columns: repeat(4, 1fr);
     }
     .border{
-        border: 4px solid black;
-        background-color: blue;
+        border: none;
+        background-color: none;
     }
 }
 
@@ -325,8 +349,9 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
     .border{
-        border: 4px solid black;
-        background-color: gray;
+        border: none;
+        background-color: none
+    ;
     }
 }*/
 
