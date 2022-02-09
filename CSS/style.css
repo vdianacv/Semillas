@@ -76,7 +76,7 @@ body{
     grid-template-areas: 
         "nav header header header header"
         "nav middlepane middlepane middlepane aside"
-        "nav footer footer footer footer";
+        "nav footer footer footer aside";
     gap: 10%;
     row-gap: 15%;
 
@@ -122,6 +122,11 @@ a{
     z-index: 9;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
 }
 
 ul{
@@ -317,7 +322,7 @@ p {
         clip-path: initial;
     }
     
-    .sidebar-nav li{
+   .sidebar-nav li{
         display: inline-block;
         border: none;
     }
