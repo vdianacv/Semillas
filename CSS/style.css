@@ -94,7 +94,7 @@ header {
 
 nav {
     grid-area: nav;
-    font-family: sans-serif;
+    font-family: 'lato' sans-serif;
 }
 
 a{
