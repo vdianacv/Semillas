@@ -385,8 +385,8 @@ p {
 
 @media screen and (min-width: 768px) {
   #grilla {
-    -ms-grid-columns: (1fr)4;
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .border {
     border: none;
@@ -396,8 +396,8 @@ p {
 
 @media screen and (min-width: 1024px) {
   #grilla {
-    -ms-grid-columns: (1fr)3;
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns:repeat(3, 1fr);
   }
   .border {
     border: none;
