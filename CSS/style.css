@@ -69,11 +69,9 @@ body {
   -ms-grid-columns: 15% auto auto 20%;
       grid-template-columns: 15% auto auto 20%;
   grid-auto-rows: auto 1fr 1fr 75%;
-      grid-template-areas: "nav header header header header"
- "nav middlepane middlepane middlepane aside"
- "nav footer footer footer aside";
-  gap: 10%;
-  row-gap: 15%;
+      grid-template-areas: "nav header header header header" "nav middlepane middlepane middlepane aside" "nav footer footer footer aside";
+  grid-column-gap: 1%;
+  row-gap: 1%;
   height: 5vh;
   margin: 0;
 }
@@ -83,18 +81,18 @@ body {
 }
 
 header {
-  grid-row: 1;
-  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: header;
 }
 
 nav {
-  grid-row: 1;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  grid-column: 1;
+  -ms-grid-column: 1;
   grid-area: nav;
-  font-family: 'lato' sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -115,25 +113,13 @@ a {
 .sidebar-nav {
   position: fixed;
   background-color: #ddd;
-  height: 100%;
+  height: auto;
   font-weight: 400;
   font-size: 1.2em;
   overflow: auto;
   padding-bottom: 6em;
-  z-index: 9;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
 }
 
 ul {
@@ -208,8 +194,8 @@ i {
 }
 
 .middlepane {
-  grid-row: 2;
-  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: middlepane;
   display: -webkit-box;
@@ -220,24 +206,25 @@ i {
 }
 
 .middlepane {
-  grid-row: 2;
-  grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: middlepane;
 }
 
 .aside {
-  grid-row: 2;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
-  grid-column: 5;
+  -ms-grid-column: 5;
   grid-area: aside;
 }
 
 footer {
-  grid-row: 3;
-  grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: footer;
+  position: end;
 }
 
 img {
@@ -397,7 +384,7 @@ p {
 @media screen and (min-width: 1024px) {
   #grilla {
     -ms-grid-columns: (1fr)[3];
-        grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
   }
   .border {
     border: none;
