@@ -338,14 +338,18 @@ p {
 }
 
 /*Estilos Mobile*/
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
   .menu-toggle {
     display: none;
   }
   .sidebar-nav {
     height: auto;
     position: relative;
-    background: transparent;
+    background: image();
     float: right;
     margin-right: 10px;
     -webkit-clip-path: initial;
